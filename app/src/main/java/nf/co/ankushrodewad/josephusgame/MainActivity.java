@@ -13,8 +13,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static android.icu.text.DisplayContext.LENGTH_SHORT;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -104,13 +102,16 @@ public class MainActivity extends AppCompatActivity {
                         t.setBackgroundResource(i);
                         is_blue[id[0]] = true;
                         t.setText("" + rand);
-                        p1_score[0] +=rand;
+                        p1_score[0] += rand;
+                        TextView textView2 = findViewById(R.id.p1_score);
+                        textView2.setText(""+p1_score[0]);
                     }
-                }else{
-                    textView.setText("It's results Time!!!");
-                    b1.setVisibility(View.GONE);
-                    b2.setVisibility(View.GONE);
-                    b3.setVisibility(View.VISIBLE);
+                    if(id[0]==45){
+                        textView.setText("It's results Time!!!");
+                        b1.setVisibility(View.GONE);
+                        b2.setVisibility(View.GONE);
+                        b3.setVisibility(View.VISIBLE);
+                    }
                 }
 
 
@@ -133,12 +134,15 @@ public class MainActivity extends AppCompatActivity {
                         is_blue[id[0]] = true;
                         t.setText("" + rand);
                         p2_score[0]+=rand;
+                        TextView textView2 = findViewById(R.id.p2_score);
+                        textView2.setText(""+p2_score[0]);
                     }
-                }else{
-                    textView.setText("It's results Time!!!");
-                    b1.setVisibility(View.GONE);
-                    b2.setVisibility(View.GONE);
-                    b3.setVisibility(View.VISIBLE);
+                    if(id[0]==45){
+                        textView.setText("It's results Time!!!");
+                        b1.setVisibility(View.GONE);
+                        b2.setVisibility(View.GONE);
+                        b3.setVisibility(View.VISIBLE);
+                    }
                 }
             }
         });
@@ -155,8 +159,6 @@ public class MainActivity extends AppCompatActivity {
                 else
                     textView.setText("It's a Draw");
                 Context context = getApplicationContext();
-                Toast toast = Toast.makeText(context, "Designed and Developed by Ankush Rodewad", Toast.LENGTH_SHORT);
-                toast.show();
             }
         });
 
@@ -176,6 +178,10 @@ public class MainActivity extends AppCompatActivity {
                 b2.setVisibility(View.VISIBLE);
                 b3.setVisibility(View.GONE);
                 textView.setText("Player 1's turn");
+                TextView t2 = findViewById(R.id.p1_score);
+                TextView t3 = findViewById(R.id.p2_score);
+                t2.setText("0");
+                t3.setText("0");
             }
         });
 

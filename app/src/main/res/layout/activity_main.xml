@@ -515,6 +515,56 @@
             app:layout_row="4" />
     </android.support.v7.widget.GridLayout>
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@android:color/holo_red_light"
+        android:text="Reset" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0sp">
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_weight="0.7"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_green_light"
+            android:text="Player 1 Score:" />
+        <TextView
+            android:id="@+id/p1_score"
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:layout_weight="0.3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_green_light"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_weight="0.7"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_light"
+            android:text="Player 2 Score:" />
+        <TextView
+            android:id="@+id/p2_score"
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:layout_weight="0.3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_light"
+            android:text="0" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/t1"
         android:layout_width="match_parent"
@@ -527,40 +577,46 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:fontFamily="casual" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="150sp"
-        android:layout_height="50dp"
-        android:layout_weight="1"
-        android:background="@android:color/holo_green_light"
-        android:text="Player 1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0sp">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="150sp"
-        android:layout_height="50sp"
-        android:layout_weight="1"
-        android:background="@android:color/holo_blue_light"
-        android:text="Player 2" />
-</LinearLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150sp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@android:color/holo_green_light"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Play" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="40sp"
-        android:text="Calculate Result"
+        android:layout_marginBottom="0sp"
         android:background="@android:color/holo_blue_light"
+        android:text="Calculate Result"
         android:visibility="gone" />
-
-    <Button
-        android:id="@+id/button4"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:background="@android:color/holo_red_light"
-        android:text="Reset" />
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal|center|fill_horizontal"
+        android:text="Designed and Developed by Ankush Rodewad"/>
 
 </LinearLayout>
