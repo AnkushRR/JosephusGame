@@ -193,13 +193,4 @@ public class MainActivity extends AppCompatActivity {
         i++;
         return i;
     }
-    public String setString(int i){
-        String str = new String();
-        str="imageView"+i;
-        return str;
-    }
-
-    public void setBox(int k){
-
-    }
 }
