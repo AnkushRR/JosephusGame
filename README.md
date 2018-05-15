@@ -16,3 +16,29 @@ win the game!
 
 More features to be added soon...
 
+How to setup this project in Android Studio :-
+
+Firstly, fork this repo from the main repository -AnkushRR/JosephusGame by clicking on the Fork button.
+
+Now clone the forked repo in your PC. For this first copy the url of your forked repo (use terminal or git bash):
+
+git clone https://github.com/[username]/JosephusGame.git
+
+[username] is replaced by your github username.
+
+Finally, open this project in Android Studio.
+
+Happy Hacking 😉
+
+Contact me or Report a bug at rodewad.ankush29@gmail.com
+
+
+How to contribute to this project :-
+
+Go through the entire project after building it, look for bugs and report them if you find any.
+
+View the issues put up in the repo and try to fix them. You may send us a pull request after that.
+
+IMPORTANT :- Before sending a Pull Request make sure that your forked repository is in sync with the base repository Click Here .
+
+Note: Also while sending Pull Request make sure all naming conventions are followed, files must be present in corresponding package.
